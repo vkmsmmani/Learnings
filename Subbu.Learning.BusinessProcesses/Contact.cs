@@ -8,7 +8,7 @@ namespace Subbu.Learning.BusinessProcesses
 {
     public class Contact
     {
-        public void GreetHello()
+        public static void GreetHello()
         {
 
         }
