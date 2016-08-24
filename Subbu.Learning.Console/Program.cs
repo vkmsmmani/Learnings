@@ -8,7 +8,7 @@ namespace Subbu.Learning.Console
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
         }
     }
