@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9D5268C8-95F1-4835-AE41-FC2586B1064D}"
+	ProjectSection(SolutionItems) = preProject
+		Common\ILMerge.exe = Common\ILMerge.exe
+		Common\Microsoft.Crm.Sdk.Proxy.dll = Common\Microsoft.Crm.Sdk.Proxy.dll
+		Common\Microsoft.Xrm.Sdk.Deployment.dll = Common\Microsoft.Xrm.Sdk.Deployment.dll
+		Common\Microsoft.Xrm.Sdk.dll = Common\Microsoft.Xrm.Sdk.dll
+		Common\Microsoft.Xrm.Sdk.Workflow.dll = Common\Microsoft.Xrm.Sdk.Workflow.dll
+		Common\Microsoft.Xrm.Tooling.Connector.dll = Common\Microsoft.Xrm.Tooling.Connector.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.BusinessProcesses", "Subbu.Learning.BusinessProcesses\Subbu.Learning.BusinessProcesses.csproj", "{F07A1716-5094-429A-B551-631BE3A72CF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.Console", "Subbu.Learning.Console\Subbu.Learning.Console.csproj", "{D097405A-D366-4685-8436-463E2823A1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.WebApplication", "Subbu.Learning.WebApplication\Subbu.Learning.WebApplication.csproj", "{0D940843-94A0-4433-8BD3-8748AC61A22C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.Plugins", "Subbu.Learning.Plugins\Subbu.Learning.Plugins.csproj", "{4065D2E1-A7A2-4987-B8E0-09BD9CB606F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.Workflows", "Subbu.Learning.Workflows\Subbu.Learning.Workflows.csproj", "{4AF7C4C2-904A-4389-A7EB-1C79DCA6894C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.WCF", "Subbu.Learning.WCF\Subbu.Learning.WCF.csproj", "{57FF4381-D7A2-4768-A0A8-62C311BFB8DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.UnitTesting", "Subbu.Learning.UnitTesting\Subbu.Learning.UnitTesting.csproj", "{C2EE37A3-3859-4571-A197-B8D2484B20E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F07A1716-5094-429A-B551-631BE3A72CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07A1716-5094-429A-B551-631BE3A72CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07A1716-5094-429A-B551-631BE3A72CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07A1716-5094-429A-B551-631BE3A72CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D097405A-D366-4685-8436-463E2823A1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D097405A-D366-4685-8436-463E2823A1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D097405A-D366-4685-8436-463E2823A1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D097405A-D366-4685-8436-463E2823A1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D940843-94A0-4433-8BD3-8748AC61A22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D940843-94A0-4433-8BD3-8748AC61A22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D940843-94A0-4433-8BD3-8748AC61A22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D940843-94A0-4433-8BD3-8748AC61A22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4065D2E1-A7A2-4987-B8E0-09BD9CB606F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4065D2E1-A7A2-4987-B8E0-09BD9CB606F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4065D2E1-A7A2-4987-B8E0-09BD9CB606F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4065D2E1-A7A2-4987-B8E0-09BD9CB606F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF7C4C2-904A-4389-A7EB-1C79DCA6894C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF7C4C2-904A-4389-A7EB-1C79DCA6894C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF7C4C2-904A-4389-A7EB-1C79DCA6894C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF7C4C2-904A-4389-A7EB-1C79DCA6894C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57FF4381-D7A2-4768-A0A8-62C311BFB8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FF4381-D7A2-4768-A0A8-62C311BFB8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FF4381-D7A2-4768-A0A8-62C311BFB8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FF4381-D7A2-4768-A0A8-62C311BFB8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2EE37A3-3859-4571-A197-B8D2484B20E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EE37A3-3859-4571-A197-B8D2484B20E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EE37A3-3859-4571-A197-B8D2484B20E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EE37A3-3859-4571-A197-B8D2484B20E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
