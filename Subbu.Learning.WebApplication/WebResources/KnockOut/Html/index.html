@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My First Knockout </title>
+	</head>
+	<body>
+		<form>
+			<table style="border:none;" >
+				<caption style="text-align:left;" >
+						<button data-bind="click: addBooking"> Add Passenger </button>
+				</caption>
+				<thead>
+					<tr>
+						<th> Name </th>
+						<th> Age </th>
+						<th> Gender </th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach: bookings">
+					<tr>
+						<td> <input name="passengerName" data-bind="value: passenger().name" /> </td>
+						<td> <input name="passengerAge" data-bind="value: passenger().age"></td>
+						<td> <select name="passengerGender" data-bind="options: $root.genders, value: passenger().gender"> </select> </td>
+						<td> <button data-bind="click: $root.removeBooking" > Remove Booking </button> </td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<script src="../Scripts/knockout-3.4.0.js" type="text/javascript" ></script>
+		<script>
+			var passengerBookings = function (bookingId, passenger)
+			{
+				var self = this;
+				self.bookingId = bookingId;
+				self.passenger = ko.observable(passenger);
+			};
+			var passengersViewModel = function () {
+			    var self = this;
+				self.genders = ['M', 'F'];
+				self.passengers = [{ name: "Subbu", age:23, gender: 'M' },
+								   { name: "Ravi", age:24, gender: 'F' },
+								   { name: "Venkat", age:21, gender: 'M' }
+								  ];
+				self.bookings = ko.observableArray([
+					new passengerBookings(190001920, self.passengers[0]),
+					new passengerBookings(190001921, self.passengers[1])
+				]);
+				self.addBooking = function (){
+					self.bookings.push(new passengerBookings(190001923, self.passengers[2]));
+				};
+				self.removeBooking = function (booking){
+					alert(booking.bookingId);
+					alert(booking.passenger());
+					alert(JSON.stringify(booking.passenger()));
+					self.bookings.remove(booking);
+				};
+			};
+			ko.applyBindings(new passengersViewModel());
+		</script>
+	</body>
+</html>
