@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9D5268
 		Common\Microsoft.Xrm.Tooling.Connector.dll = Common\Microsoft.Xrm.Tooling.Connector.dll
 		Common\Subbu.Learning.Plugins.Build.log = Common\Subbu.Learning.Plugins.Build.log
 		Common\Subbu.Learning.Workflows.Build.log = Common\Subbu.Learning.Workflows.Build.log
+		Common\Subbu.Learnings.snk = Common\Subbu.Learnings.snk
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subbu.Learning.BusinessProcesses", "Subbu.Learning.BusinessProcesses\Subbu.Learning.BusinessProcesses.csproj", "{F07A1716-5094-429A-B551-631BE3A72CF4}"
