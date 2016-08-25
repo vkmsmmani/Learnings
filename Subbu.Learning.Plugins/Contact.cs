@@ -23,16 +23,18 @@ namespace Subbu.Learning.Plugins
                 IOrganizationService service = factory.CreateOrganizationService(context.UserId);
                 ITracingService tracingService = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
                 Entity target = (Entity)context.InputParameters["Target"];
+                Entity preImage = (Entity)context.PreEntityImages["PreImage"],
+                           postImage = (Entity)context.PostEntityImages["PostImage"];
+                Entity updatingEntity = new Entity("contact");
                 if (target.Contains("emailaddress1"))
                 {
-                    Entity preImage = (Entity) context.PreEntityImages["PreImage"],
-                           postImage = (Entity) context.PostEntityImages["PostImage"];
-                    Entity updatingEntity = new Entity("contact");
+                    updatingEntity = new Entity("contact");
                     updatingEntity.Id = target.Id;
                     updatingEntity["description"] = "Pre Image: Emailaddress1 - " + preImage.GetAttributeValue<string>("emailaddress1") + " Post Image: Emailaddress1 - " + postImage.GetAttributeValue<string>("emailaddress1");
                     service.Update(updatingEntity);
-                    
+
                 }
+               
                 if (target.Contains("mobilephone"))
                 {
                     Entity account = new Entity("account");
@@ -40,8 +42,7 @@ namespace Subbu.Learning.Plugins
                     account["name"] = target["mobilephone"];
                     service.Create(account);
                 }
-                
-            }
+             }
             catch (Exception exception)
             {
                 throw new InvalidPluginExecutionException(exception.Message);

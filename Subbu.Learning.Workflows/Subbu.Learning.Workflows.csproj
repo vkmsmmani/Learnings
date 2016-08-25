@@ -31,7 +31,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy">
+      <HintPath>..\Common\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk">
+      <HintPath>..\Common\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk.Deployment">
+      <HintPath>..\Common\Microsoft.Xrm.Sdk.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk.Workflow">
+      <HintPath>..\Common\Microsoft.Xrm.Sdk.Workflow.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Activities">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,7 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="SendBirthDayWish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +67,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>$(SolutionDir)Common\ILMerge.exe /keyfile:"$(SolutionDir)Common\Subbu.Learnings.snk" /log:$(SolutionDir)Common\Subbu.Learning.Workflows.Build.log /out:"$(TargetDir)Subbu.Learning.Workflows.Merged.dll" "$(TargetDir)Subbu.Learning.Workflows.dll" "$(TargetDir)Subbu.Learning.BusinessProcesses.dll"</PostBuildEvent>
+    <PostBuildEvent>$(SolutionDir)Common\ILMerge.exe /keyfile:"$(SolutionDir)Common\Subbu.Learnings.snk" /log:"$(SolutionDir)Common\Subbu.Learning.Workflows.Build.log" /out:"$(TargetDir)Subbu.Learning.Workflows.Merged.dll" "$(TargetDir)Subbu.Learning.Workflows.dll" "$(TargetDir)Subbu.Learning.BusinessProcesses.dll"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
